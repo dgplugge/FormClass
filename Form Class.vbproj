@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6677C409-6575-462D-8F43-19B0CA168900}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Form_Class</RootNamespace>
+    <AssemblyName>Form Class</AssemblyName>
+    <MyType>Windows</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/Form Class/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Form Class.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Form Class.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeRush.Common, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.Core, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeRush.Interop, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.StructuralParser, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.CodeRush.VSCore, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.Utils.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraBars.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraEditors.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Controls.XtraTreeList.v6.3, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Localization, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Parser, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="DevExpress.DXCore.Platform, Version=10.2.3.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorChangedEventArgs.vb" />
+    <Compile Include="FormStyle.vb" />
+    <Compile Include="frmColorChooser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorWheel.vb" />
+    <Compile Include="frmAuth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColorTable.designer.vb">
+      <DependentUpon>frmColorTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmColorTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmData.designer.vb">
+      <DependentUpon>frmData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDerivedData.Designer.vb">
+      <DependentUpon>frmDerivedData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDerivedData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDGVForm.Designer.vb">
+      <DependentUpon>frmDGVForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDGVForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEFL.designer.vb">
+      <DependentUpon>frmEFL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEFL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExport.Designer.vb">
+      <DependentUpon>frmExport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindData.Designer.vb">
+      <DependentUpon>frmFindData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImpersonate.Designer.vb">
+      <DependentUpon>frmImpersonate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImpersonate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrintDG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPVWave.Designer.vb">
+      <DependentUpon>frmPVWave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPVWave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRename.designer.vb">
+      <DependentUpon>frmRename.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRename.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRuns.designer.vb">
+      <DependentUpon>frmRuns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRuns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServerData.Designer.vb">
+      <DependentUpon>frmServerData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServerData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSort.designer.vb">
+      <DependentUpon>frmSort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProtocol.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVMS.Designer.vb">
+      <DependentUpon>frmVMS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVMS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SpinningProgress.designer.vb">
+      <DependentUpon>SpinningProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SpinningProgress.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VMSAccess.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmColorChooser.resx">
+      <DependentUpon>frmColorChooser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAuth.resx">
+      <DependentUpon>frmAuth.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColorTable.resx">
+      <DependentUpon>frmColorTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmData.resx">
+      <DependentUpon>frmData.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDerivedData.resx">
+      <DependentUpon>frmDerivedData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDGVForm.resx">
+      <DependentUpon>frmDGVForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEFL.resx">
+      <DependentUpon>frmEFL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExport.resx">
+      <DependentUpon>frmExport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFindData.resx">
+      <DependentUpon>frmFindData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHeader.resx">
+      <DependentUpon>frmHeader.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImpersonate.resx">
+      <DependentUpon>frmImpersonate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrintDG.resx">
+      <DependentUpon>frmPrintDG.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPVWave.resx">
+      <DependentUpon>frmPVWave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRename.resx">
+      <DependentUpon>frmRename.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRuns.resx">
+      <DependentUpon>frmRuns.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServerData.resx">
+      <DependentUpon>frmServerData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSort.resx">
+      <DependentUpon>frmSort.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProtocol.resx">
+      <DependentUpon>frmProtocol.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVMS.resx">
+      <DependentUpon>frmVMS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpinningProgress.resx">
+      <DependentUpon>SpinningProgress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DGVPrinter\DGVPrinter.csproj">
+      <Project>{95052B9C-3DC0-4F9B-BF1C-65E90C00FEAE}</Project>
+      <Name>DGVPrinter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FCS_Classes\FCS_Classes.vbproj">
+      <Project>{B2F593BE-CED0-4BFE-87EF-46D85C2D2770}</Project>
+      <Name>FCS_Classes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelperClasses\HelperClasses.vbproj">
+      <Project>{B08403E2-A086-4E89-B2A3-D6F84DB67261}</Project>
+      <Name>HelperClasses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OfficeLibrary\OfficeLibrary\OfficeLibrary.vbproj">
+      <Project>{E8C71878-62DF-40D5-AEB1-E83F147245CC}</Project>
+      <Name>OfficeLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PowerPoint">
+      <Guid>{91493440-5A91-11CF-8700-00AA0060263B}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Scripting">
+      <Guid>{420B2830-E718-11CF-893D-00A0C9054228}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VisualBasic.PowerPacks.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Basic PowerPacks 10.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

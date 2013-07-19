@@ -1,0 +1,46 @@
+bin\Debug\Form Class.dll
+bin\Debug\Form Class.pdb
+bin\Debug\Form Class.xml
+bin\Debug\FCS_Classes.dll
+bin\Debug\HelperClasses.dll
+bin\Debug\Interop.Scripting.dll
+bin\Debug\FCS_Classes.pdb
+bin\Debug\FCS_Classes.xml
+bin\Debug\HelperClasses.pdb
+bin\Debug\HelperClasses.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.Scripting.dll
+obj\Debug\Form Class.vbproj.ResolveComReference.cache
+obj\Debug\Form_Class.frmHeader.resources
+obj\Debug\Form_Class.frmPrintDG.resources
+obj\Debug\Form_Class.frmRuns.resources
+obj\Debug\Form_Class.frmSetup.resources
+obj\Debug\Form_Class.frmTable.resources
+obj\Debug\Form_Class.Resources.resources
+obj\Debug\Form Class.vbproj.GenerateResource.Cache
+obj\Debug\Form Class.dll
+obj\Debug\Form Class.xml
+obj\Debug\Form Class.pdb
+bin\Release\Form Class.dll
+bin\Release\Form Class.pdb
+bin\Release\Form Class.xml
+bin\Release\FCS_Classes.dll
+bin\Release\HelperClasses.dll
+bin\Release\Interop.Scripting.dll
+bin\Release\FCS_Classes.pdb
+bin\Release\FCS_Classes.xml
+bin\Release\HelperClasses.pdb
+bin\Release\HelperClasses.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\Interop.Scripting.dll
+obj\Release\Form Class.vbproj.ResolveComReference.cache
+obj\Release\Form_Class.frmHeader.resources
+obj\Release\Form_Class.frmPrintDG.resources
+obj\Release\Form_Class.frmRuns.resources
+obj\Release\Form_Class.frmSetup.resources
+obj\Release\Form_Class.frmTable.resources
+obj\Release\Form_Class.Resources.resources
+obj\Release\Form Class.vbproj.GenerateResource.Cache
+obj\Release\Form Class.dll
+obj\Release\Form Class.xml
+obj\Release\Form Class.pdb
